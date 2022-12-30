@@ -1,0 +1,134 @@
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    margin: 15px 20px;
+    background: transparent;
+}
+
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link_container {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link_container a {
+    font-family: 'General Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F1F3F4;
+}
+
+.link_container a:hover {
+    background-color: #111;
+}
+
+.social {
+    width: 25%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    outline: none;
+    display: none;
+}
+
+.icons-color {
+    color: #F1F3F4;
+}
+
+.mobile {
+    display: none;
+}
+
+.link-text {
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .icons-color {
+        color: #111;
+    }
+
+    .menu-icon {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        margin: 15px 20px;
+        cursor: pointer;
+    }
+
+    .mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile a {
+        display: flex;
+        align-items: center;
+    }
+
+    .links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 60px;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1000;
+        gap: 1.5rem;
+        background-color: #fff;
+        transition: 1s;
+        transform: translateX(-100vw);
+    }
+
+    .link_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link_container a {
+        color: #000;
+    }
+
+    .link_container a:hover {
+        background-color: #bcbcbc;
+    }
+
+    .responsive_nav {
+        transform: none;
+    }
+
+    .bg-gray {
+        background-color: #222222;
+    }
+}

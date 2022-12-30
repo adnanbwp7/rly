@@ -1,0 +1,90 @@
+.accordion__section {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    margin: 10px;
+}
+
+.faq_container {
+    display: flex;
+    width: 95%;
+    max-width: 1280px;
+    margin: 30px auto;
+    justify-content: space-between;
+}
+
+.accordion_container {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    margin: 30px 0;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover,
+.active {
+    background-color: transparent;
+}
+
+/* Style the accordion content title */
+.accordion__title {
+    width: 90%;
+    font-family: General Sans Regular;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #F1F3F4;
+    margin: 0 5px;
+}
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+    margin-left: auto;
+    transition: transform 0.6s ease;
+}
+
+/* Style to rotate icon when state is active */
+.rotate {
+    transform: rotate(90deg);
+}
+
+/* Style the accordion content panel. Note: hidden by default */
+.accordion__content {
+    background-color: transparent;
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+}
+
+/* Style the accordion content text */
+.accordion__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .faq_container {
+        flex-direction: column;
+    }
+
+    .accordion_container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}

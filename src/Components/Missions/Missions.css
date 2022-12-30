@@ -1,0 +1,222 @@
+.mission_container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 180px auto;
+}
+
+.missin_heading-text {
+    font-family: 'General Sans Bold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #F1F3F4;
+    text-align: center;
+    margin: 180px auto;
+}
+
+.mission_heading {
+    font-family: 'General Sans Light';
+    font-style: normal;
+    font-weight: 300;
+    margin: 80px auto;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #F1F3F4;
+}
+
+.mission_card_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mission_card {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    margin: 30px 0;
+}
+
+#card3 {
+    width: 57%;
+}
+
+#card1 {
+    width: 57%;
+}
+
+.card_text {
+    font-family: 'General Sans Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    width: 90%;
+    max-width: 400px;
+    margin-left: -30px;
+    color: #F1F3F4;
+}
+
+.circle-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+}
+
+.big_circle {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    height: 200px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: relative;
+    border: 1px solid #444;
+    animation-delay: 5s;
+}
+
+.big_circle {
+    animation: circleScale 5s infinite;
+}
+
+@keyframes circleScale {
+    0% {
+        -ms-transform: scale(0.2);
+        -moz-transform: scale(0.2);
+        -webkit-transform: scale(0.2);
+        -o-transform: scale(0.2);
+        transform: scale(0.2);
+    }
+
+    50% {
+        -ms-transform: scale(1);
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    100% {
+        -ms-transform: scale(0.2);
+        -moz-transform: scale(0.2);
+        -webkit-transform: scale(0.2);
+        -o-transform: scale(0.2);
+        transform: scale(0.2);
+    }
+}
+
+.small_circle {
+    /* transform: translateX(100%) translateY(100%); */
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    border: 1px solid #ff3e00;
+    /* transform-origin: 50% 50%; */
+}
+
+#card2 {
+    align-self: flex-start;
+    flex-direction: row-reverse;
+    width: 57%
+}
+
+#card2 .card_text {
+    margin-left: 0;
+    text-align: right;
+    margin-right: -62px;
+}
+
+#circle2 {
+    width: 15px;
+    height: 15px;
+}
+
+
+#card2 .animate .big_circle {
+    border-radius: 0;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    animation: circleRotate 5s infinite;
+}
+
+
+@keyframes circleRotate {
+    0% {
+        -ms-transform: scale(0.2) rotate(360deg);
+        -moz-transform: scale(0.2) rotate(360deg);
+        -webkit-transform: scale(0.2) rotate(360deg);
+        -o-transform: scale(0.2) rotate(360deg);
+        transform: scale(0.2) rotate(360deg);
+    }
+
+    50% {
+        -ms-transform: scale(1) rotate(45deg);
+        -moz-transform: scale(1) rotate(45deg);
+        -webkit-transform: scale(1) rotate(45deg);
+        -o-transform: scale(1) rotate(45deg);
+        transform: scale(1) rotate(45deg);
+    }
+
+    100% {
+        -ms-transform: scale(0.2) rotate(360deg);
+        -moz-transform: scale(0.2) rotate(360deg);
+        -webkit-transform: scale(0.2) rotate(360deg);
+        -o-transform: scale(0.2) rotate(360deg);
+        transform: scale(0.2) rotate(360deg);
+    }
+}
+
+
+@media screen and (width <=960px) {
+
+    .mission_card,
+    #card2 {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .small_circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    #card1,
+    #card3 {
+        width: 100%;
+    }
+
+    .card_text {
+        margin: 10px auto;
+    }
+
+    #card2 .card_text {
+        /* margin-right: 0; */
+        margin: 10px auto;
+        text-align: unset;
+    }
+
+    .big_circle,
+    #card3 .big_circle {
+        width: 70px;
+        height: 70px;
+    }
+
+    #card2 .big_circle {
+        border-radius: 0 !important;
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+
+}
