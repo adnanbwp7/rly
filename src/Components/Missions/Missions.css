@@ -1,6 +1,6 @@
 .mission_container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: 180px auto;
 }
 
@@ -39,11 +39,11 @@
 }
 
 #card3 {
-    width: 57%;
+    width: 59.7%;
 }
 
 #card1 {
-    width: 57%;
+    width: 59.7%;
 }
 
 .card_text {
@@ -126,7 +126,7 @@
 #card2 {
     align-self: flex-start;
     flex-direction: row-reverse;
-    width: 57%
+    width: 59.8%;
 }
 
 #card2 .card_text {
@@ -177,7 +177,7 @@
 }
 
 
-@media screen and (width <=960px) {
+@media screen and (width <=990px) {
 
     .mission_card,
     #card2 {
