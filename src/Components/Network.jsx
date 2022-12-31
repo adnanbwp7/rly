@@ -15,18 +15,22 @@ const Network = () => {
                 <div className=' threeicons'>
                     <div className='network_container'>
                         <a href='https://twitter.com/FerrumNetwork' target='_blank' className='network_img'>
-                            <img src={networkl} alt="network logo" />
+                            <div style={{ width: "100%", maxWidth: 'fit-content' }}>
+                                <img src={networkl} alt="network logo" />
+                            </div>
                         </a>
                         <a href='https://twitter.com/midnightlabshq' target='_blank' className='network_img'>
-                            <img src={networkc} alt="network logo" />
+                            <div style={{ width: "100%", maxWidth: 'fit-content' }}>
+                                <img src={networkc} alt="network logo" />
+                            </div>
                         </a>
-
                         <a href='https://twitter.com/0xPioneers' target='_blank' className='network_img'>
-                            <img src={networkr} alt="network logo" />
+                            <div style={{ width: "100%", maxWidth: 'fit-content' }}>
+                                <img src={networkr} alt="network logo" />
+                            </div>
                         </a>
                     </div>
                 </div>
-
                 <div className='cstyle'>
                     <div className='card-shadow'></div>
                     <div className='row makerow'>

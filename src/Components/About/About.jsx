@@ -78,11 +78,11 @@ const About = () => {
                     </div>
 
                     <div className="about_btn_grp">
-                        <Link to="/">
+                        <Link to="/" className='btn_inq'>
                             <BsArrowLeft style={{ fontSize: "25px" }} />
                             back to main page
                         </Link>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSda-mIb7TwXpkwwtbvS2OLND4i0JMsGmGvHUNsZlet47X8jpA/viewform" target="_blank">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSda-mIb7TwXpkwwtbvS2OLND4i0JMsGmGvHUNsZlet47X8jpA/viewform" target="_blank" className='btn_inq'>
                             Submit Inquiry
                             <BsArrowRight style={{ fontSize: "25px" }} />
                         </a>
